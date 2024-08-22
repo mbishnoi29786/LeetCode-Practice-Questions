@@ -26,8 +26,8 @@ console.log(countSeniors(["1313579440F2036","2921522980M5644"])); // Output: 0
 * @return {number}
 */
 var countSeniors = function(details) {
-   return details.filter(str=> {
-       let age = parseInt(str.substring(11,13));
-       return age >60;
-   }).length;
+    return details.filter(str=> {
+        let age = parseInt(str.substring(11,13));
+        return age >60;
+    }).length;
 };
